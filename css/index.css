@@ -1,0 +1,712 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    background-image: url('../img//grid.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center; 
+}
+
+
+
+
+/* NAVBAR */
+#navbar {
+    position: sticky; 
+    top: 0;
+}
+
+#navbar .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; align-items: center;
+    padding: 1rem 10.5rem 1rem 2rem;
+}
+
+#navbar .container .navbar-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; align-items: center;
+}
+
+#navbar .container .navbar-menu ul li {
+    margin: 0 1rem;
+}
+#navbar .container .navbar-menu ul li:last-child {
+    margin-right: 0;
+}
+#navbar .container .navbar-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+#navbar .container .navbar-menu ul li a:hover {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+
+
+
+/* HOME */
+#home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    max-width: 900px;
+    margin: 7rem auto;
+}
+
+#home h1 {
+    font-size: 5.6875rem;
+    font-weight: 200;
+}
+
+#home h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+#home .contact {
+    font-size: 2rem;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+}
+
+#home .contact a {
+    border: 1px solid #fff;
+    padding: .75rem 2rem; border-radius: 100px;
+    font-size: 1.1875rem;
+    display: flex;
+    justify-content: center; align-items: center;
+    transition: all .5s ease;
+}
+
+#home .contact a:first-child {
+    background: #fff;
+    color: #009a44;
+}
+
+#home .contact a:first-child:hover {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+#home .contact a:last-child:hover {
+    background: #fff;
+    color: #009a44;
+    cursor: pointer;
+}
+
+
+
+
+/* ABOUT */
+#about {
+    margin: 15rem auto 4rem;
+    padding: 7rem 0 0;
+    position: relative;
+    width: 100%; max-width: 750px;
+    display: flex;
+    justify-content: center; align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#about h2 {
+    color: #009a44;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+#about h2:last-child {
+    line-height: 60px;
+}
+
+#about p {
+    color: #979797;
+    font-size: 1.125rem;
+    line-height: 26px;
+}
+
+#about p:last-child {
+    color: #009a44;
+    margin-top: 2rem;
+}
+#about svg {
+    margin: 3rem auto;
+}
+
+
+
+
+/* TUTORIAL */
+#tutorial {
+    margin: 10rem auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tutorial > svg {
+    position: absolute;
+    width: 100%;
+}
+
+#tutorial .container {
+    text-align: center; z-index: 999;
+    width: 100%; max-width: 900px;
+}
+
+#tutorial .container h2 {
+    color: #009a44;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#tutorial .container p {
+    font-size: 1.375rem;
+    color: #979797;
+    margin-bottom: 4rem;
+}
+
+#tutorial .container .col-12 {
+    background: #fff;
+    border-radius: 10px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center; align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 2.5rem 3.5rem 3rem;
+    box-shadow: 8px 10px 5px #909090;
+}
+
+#tutorial .container .col-12 h4 {
+    color: #009a44;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#tutorial .container .col-12 p {
+    font-size: 1.125rem;
+    color: #979797;
+    margin: 0;
+    font-weight: 300;
+}
+
+#tutorial .container .col-12 > div {
+    display: flex;
+    justify-content: center; align-items: center;
+    grid-gap: 3rem;
+}
+
+#tutorial a {
+    text-decoration: none;
+    color: #fff;
+    background: #009a44;
+    padding: 1rem 3rem;
+    margin: 4rem auto 0;
+    border-radius: 50px;
+    transition: all .5s ease;
+    z-index: 999;
+}
+#tutorial a:hover {
+    cursor: pointer;
+    color: #009a44;
+    background: #fff;
+
+}
+
+
+
+
+/* WHY */
+#why {
+    margin: 10rem auto 0;
+    padding: 4rem 4.5rem 0;
+    position: relative;
+    width: 100%; max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#why h2 {
+    color: #009a44;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+#why h2:last-of-type {
+    margin-top: 3rem;
+}
+#why h4 {
+    color: #009a44;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 3rem auto 1rem;
+}
+
+#why p {
+    font-size: 1.125rem;
+    color: #979797;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+#why svg {
+    margin: 4rem auto;
+}
+#why .stores {
+    margin-bottom: 8rem;
+}
+#why .stores svg {
+    margin: 1rem auto;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    margin: 20rem auto 8rem;
+    padding: 7rem 0 0;
+    position: relative;
+    width: 100%; max-width: 900px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: flex-end;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin: .5rem 0;
+}
+
+footer h4 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: all .5s ease;
+}
+
+footer a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+footer .container .menu-website {
+    justify-self: center;
+}
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    html, body {
+        font-size: 12px;
+    }
+    #home {
+        margin: 3rem auto;
+        max-width: 400px;
+    }
+    #about {
+        margin: 10rem auto 2rem;
+        max-width: 400px;
+        z-index: 999;
+        padding: 10rem 0 0;
+    }
+    #about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #about svg {
+        margin: 1rem auto;
+        width: 100px; height: 110px;
+    }
+    #about svg image {
+        width: 100px; height: 110px;
+    }
+    #about p:last-child {
+        margin-top: 1rem;
+    }
+    #tutorial {
+        margin: 3rem auto 2rem;
+    }
+    #tutorial .container {
+        margin: 3rem auto 2rem;
+        max-width: 400px;
+    }
+    #tutorial .container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #tutorial .container p {
+        margin-bottom: 3rem;
+    }
+    #tutorial .container .col-12 > div {
+        grid-gap: 2rem;
+    }
+    #tutorial .container .col-12 > div .apple svg,
+    #tutorial .container .col-12 > div .google svg {
+        width: 150px;
+    }
+    #tutorial .container .col-12 > div .apple svg image,
+    #tutorial .container .col-12 > div .google svg image {
+        width: 150px;
+    }
+    #tutorial a {
+        margin: 1rem auto 0;
+    }
+    #why {
+        margin: 5rem auto 0;
+        padding: 0 1rem 0;
+        max-width: 400px;
+    }
+    #why h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #why svg {
+        margin: 1rem auto;
+    }
+    #why .romb {
+        width: 100px; height: 100px;
+    }
+    #why .romb image {
+        width: 100px; height: 100px;
+    }
+    #why .leaf {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    #why h2:last-of-type {
+        margin-top: 1rem;
+    }
+    #why h4 {
+        margin: 2rem auto 1rem;
+    }
+    footer {
+        margin: 8rem auto 10rem;
+        max-width: 400px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    html, body {
+        font-size: 12px;
+    }
+    #home {
+        margin: 3rem auto;
+        max-width: 540px;
+    }
+    #about {
+        margin: 10rem auto 2rem;
+        max-width: 540px;
+        z-index: 999;
+    }
+    #about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #about svg {
+        margin: 1rem auto;
+        width: 100px; height: 110px;
+    }
+    #about svg image {
+        width: 100px; height: 110px;
+    }
+    #about p:last-child {
+        margin-top: 1rem;
+    }
+    #tutorial {
+        margin: 3rem auto 2rem;
+    }
+    #tutorial .container {
+        margin: 3rem auto 2rem;
+        max-width: 540px;
+    }
+    #tutorial .container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #tutorial .container p {
+        margin-bottom: 3rem;
+    }
+    #tutorial .container .col-12 > div {
+        grid-gap: 2rem;
+    }
+    #tutorial .container .col-12 > div .apple svg,
+    #tutorial .container .col-12 > div .google svg {
+        width: 150px;
+    }
+    #tutorial .container .col-12 > div .apple svg image,
+    #tutorial .container .col-12 > div .google svg image {
+        width: 150px;
+    }
+    #tutorial a {
+        margin: 1rem auto 0;
+    }
+    #why {
+        margin: 5rem auto 0;
+        padding: 0 4.5rem 0;
+        max-width: 540px;
+    }
+    #why h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #why svg {
+        margin: 1rem auto;
+    }
+    #why .romb {
+        width: 100px; height: 100px;
+    }
+    #why .romb image {
+        width: 100px; height: 100px;
+    }
+    #why .leaf {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    #why h2:last-of-type {
+        margin-top: 1rem;
+    }
+    #why h4 {
+        margin: 2rem auto 1rem;
+    }
+    footer {
+        margin: 8rem auto;
+        max-width: 540px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    html, body {
+        font-size: 12px;
+    }
+    #home {
+        margin: 5rem auto;
+        max-width: 700px;
+    }
+    #about {
+        margin: 5rem auto 2rem;
+        max-width: 700px;
+        z-index: 999;
+    }
+    #about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #about svg {
+        margin: 1rem auto;
+        width: 100px; height: 110px;
+    }
+    #about svg image {
+        width: 100px; height: 110px;
+    }
+    #about p:last-child {
+        margin-top: 1rem;
+    }
+    #tutorial {
+        margin: 3rem auto 2rem;
+    }
+    #tutorial .container {
+        margin: 3rem auto 2rem;
+        max-width: 700px;
+    }
+    #tutorial .container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #tutorial .container p {
+        margin-bottom: 3rem;
+    }
+    #tutorial .container .col-12 > div {
+        grid-gap: 2rem;
+    }
+    #tutorial .container .col-12 > div .apple svg,
+    #tutorial .container .col-12 > div .google svg {
+        width: 150px;
+    }
+    #tutorial .container .col-12 > div .apple svg image,
+    #tutorial .container .col-12 > div .google svg image {
+        width: 150px;
+    }
+    #tutorial a {
+        margin: 1rem auto 0;
+    }
+    #why {
+        margin: 5rem auto 0;
+        padding: 0 4.5rem 0;
+        max-width: 700px;
+    }
+    #why h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #why svg {
+        margin: 1rem auto;
+    }
+    #why .romb {
+        width: 100px; height: 100px;
+    }
+    #why .romb image {
+        width: 100px; height: 100px;
+    }
+    #why .leaf {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    #why h2:last-of-type {
+        margin-top: 1rem;
+    }
+    #why h4 {
+        margin: 2rem auto 1rem;
+    }
+    footer {
+        margin: 8rem auto;
+        max-width: 700px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    html, body {
+        font-size: 12px;
+    }
+    #home {
+        margin: 5rem auto;
+        max-width: 700px;
+    }
+    #about {
+        margin: 5rem auto 2rem;
+        max-width: 700px;
+        z-index: 999;
+    }
+    #about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #about svg {
+        margin: 1rem auto;
+        width: 100px; height: 110px;
+    }
+    #about svg image {
+        width: 100px; height: 110px;
+    }
+    #about p:last-child {
+        margin-top: 1rem;
+    }
+    #tutorial {
+        margin: 3rem auto 2rem;
+    }
+    #tutorial .container {
+        margin: 3rem auto 2rem;
+        max-width: 700px;
+    }
+    #tutorial .container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #tutorial .container p {
+        margin-bottom: 3rem;
+    }
+    #tutorial .container .col-12 > div {
+        grid-gap: 2rem;
+    }
+    #tutorial .container .col-12 > div .apple svg,
+    #tutorial .container .col-12 > div .google svg {
+        width: 150px;
+    }
+    #tutorial .container .col-12 > div .apple svg image,
+    #tutorial .container .col-12 > div .google svg image {
+        width: 150px;
+    }
+    #tutorial a {
+        margin: 1rem auto 0;
+    }
+    #why {
+        margin: 5rem auto 0;
+        padding: 0 4.5rem 0;
+        max-width: 700px;
+    }
+    #why h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #why svg {
+        margin: 1rem auto;
+    }
+    #why .romb {
+        width: 100px; height: 100px;
+    }
+    #why .romb image {
+        width: 100px; height: 100px;
+    }
+    #why .leaf {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    #why h2:last-of-type {
+        margin-top: 1rem;
+    }
+    #why h4 {
+        margin: 2rem auto 1rem;
+    }
+    footer {
+        margin: 8rem auto;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
